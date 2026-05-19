@@ -88,13 +88,8 @@ pipeline {
 
             steps {
 
-                sshagent(credentials: ['ubuntu']) {
-
-                    sh """
-                    scp -o StrictHostKeyChecking=no \
-                    target/*.war \
-                    ubuntu@${TOMCAT_IP}:${TOMCAT_PATH}war.war
-                    """
+                sh 'cp target/*.war /var/lib/share/tomcat10/'
+                
                 }
             }
         }

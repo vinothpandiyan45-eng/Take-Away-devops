@@ -88,8 +88,7 @@ pipeline {
 
             steps {
 
-                sh 'cp target/*.war /var/lib/share/tomcat10/'
-                
+                sh 'cp target/*.war {TOMCAT_PATH}war.war'           
                   }
             
         }

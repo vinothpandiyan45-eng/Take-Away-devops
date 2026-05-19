@@ -93,7 +93,7 @@ pipeline {
                     sh """
                     scp -o StrictHostKeyChecking=no \
                     target/*.war \
-                    ubuntu@${TOMCAT_IP}:${TOMCAT_PATH}myapp.war
+                    ubuntu@${TOMCAT_IP}:${TOMCAT_PATH}war.war
                     """
                 }
             }

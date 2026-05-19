@@ -20,7 +20,7 @@ pipeline {
             steps {
 
                 git branch: 'main',
-                url: 'https://github.com/Pradeesh2007/fortask.git'
+                url: 'https://github.com/vinothpandiyan45-eng/Take-Away-devops.git'
             }
         }
 

@@ -90,8 +90,8 @@ pipeline {
 
                 sh 'cp target/*.war /var/lib/share/tomcat10/'
                 
-                
-            }
+                  }
+            
         }
     }
 
